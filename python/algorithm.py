@@ -1,14 +1,18 @@
 import pyautogui as gui
 
-class Complex:
-	patterns = [ () ]
+class Algorithm:
+	def __init__(self, templates, originCoords)
+	self.imgs = templates
+	self.boardX = originCoords[0]
+	self.boardY = originCoords[1]
 
-    def __init__(self, realpart, imagpart):
-        self.r = realpart
-        self.i = imagpart
-
-    def scanBoard():
-
+	def scanBoard(boardX, boardY):
+		locs = []
+		for t in templates:
+			for l in gui.locateAllOnScreen(imgs[t]):
+				locs.append(l, t)
+		locs.sort()
+		return locs
 
 	def checkNormal():
 		for i in range(8):
